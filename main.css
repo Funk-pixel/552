@@ -1,0 +1,153 @@
+/* Основні стилі */
+body {
+    margin: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff; /* Фон за замовчуванням */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ШАПКА - БІЛА */
+.main-header {
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-small {
+    height: 50px; /* Зменшений розмір логотипу */
+    width: auto;
+}
+
+/* Пошук - тонка лінія */
+.search-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    width: 200px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav-menu a.active { color: #2e7d32; }
+
+/* КОЛЬОРОВА ОБЛАСТЬ ПІСЛЯ ШАПКИ */
+.colored-wrapper {
+    background-color: #fdf3f3; /* Колір із вашого макету */
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* Текстові акценти */
+.content-intro h1 { color: #3e4a59; font-size: 28px; margin-top: 40px; }
+.stars { color: #4caf50; letter-spacing: 2px; margin-bottom: 25px; }
+
+.description p { line-height: 1.6; margin-bottom: 20px; font-size: 15px; }
+
+.red-sidebar-accent {
+    border-left: 4px solid #e53935;
+    padding-left: 20px;
+    margin: 35px 0;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Колонки без рамки з чорними лініями */
+.breeding-programs {
+    display: flex;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.program-col { flex: 1; }
+
+.program-col h3 {
+    font-size: 16px;
+    color: #3e4a59;
+    border-bottom: 1px solid #000; /* Чорна лінія */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    min-height: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.program-col p { font-size: 14px; line-height: 1.5; }
+
+/* Сітка товарів */
+.hybrids-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding-bottom: 60px;
+}
+
+.hybrid-item img {
+    width: 100%;
+    display: block;
+    border: 1px solid #eee;
+}
+
+/* Футер */
+.main-footer {
+    background-color: #37474f;
+    color: #fff;
+    padding: 40px 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+}
+
+.footer-nav a { color: #fff; text-decoration: none; font-size: 11px; }
+
+.social-icons { display: flex; gap: 10px; }
+.social-icons img { width: 25px; height: 25px; cursor: pointer; }
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 11px;
+    color: #90a4ae;
+}

@@ -1,0 +1,70 @@
+/* Загальні стилі */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.full-width-img { width: 100%; display: block; }
+
+/* ГОЛОВНИЙ БЛОК: ПШЕНИЦЯ ЧЕРЕЗ CSS */
+.hero-section {
+    width: 100%;
+    height: 600px;
+    background: url('image.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header { padding: 30px 0; }
+.header-flex { display: flex; justify-content: space-between; align-items: flex-end; }
+.logo img { height: 70px; }
+
+.search-box { border-bottom: 1px solid #333; margin-bottom: 12px; padding-bottom: 3px; }
+.search-box input { background: transparent; border: none; outline: none; width: 150px; }
+
+.main-nav ul { list-style: none; display: flex; gap: 15px; }
+.main-nav a { text-decoration: none; color: #000; font-weight: bold; font-size: 13px; }
+
+.hero-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 48px;
+    color: #5d6d48;
+    margin-bottom: 30px;
+}
+.btn-read-more {
+    background: #6fb052;
+    color: white;
+    padding: 14px 45px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* РОЗДІЛЕННЯ */
+.products-strip { background: #fff; padding: 20px 0; }
+.mission-section { background: #f4f4f4; padding: 60px 0; }
+
+/* ACTIVITIES */
+.activities { padding: 60px 0; text-align: center; }
+.section-title { font-family: 'Roboto Slab', serif; color: #3e4d56; font-size: 30px; }
+.dots { color: #8ab34a; letter-spacing: 5px; margin-bottom: 40px; }
+.activity-grid { display: flex; justify-content: space-between; gap: 20px; }
+.card { flex: 1; text-align: center; }
+.activity-img { max-width: 100%; height: auto; }
+.card h3 { color: #6fb052; margin: 15px 0 5px; font-size: 18px; }
+.card-line { width: 40px; height: 2px; background: #ddd; margin: 0 auto 10px; }
+.card p { font-size: 13px; color: #666; }
+
+/* ФУТЕР */
+.main-footer { background: #334148; color: white; padding: 40px 0 0; }
+.footer-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 1px solid #4a575d; }
+.footer-nav a { color: white; text-decoration: none; font-size: 11px; margin: 0 5px; }
+.socials img { height: 20px; margin-left: 10px; cursor: pointer; }
+.footer-bottom { background: #2a363d; padding: 15px 0; text-align: center; font-size: 10px; margin-top: 20px; }
